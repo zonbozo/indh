@@ -1,0 +1,513 @@
+<head>
+  <meta charset="UTF-8">
+  <title>INDH - Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    console.log("Chargement de la page INDH...");
+  </script>
+</head>
+
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-2">Suivez nous sur :</span>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Facebook" onclick="console.log('Icône Facebook cliquée')">
+      <i class="bi bi-facebook" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Instagram" onclick="console.log('Icône Instagram cliquée')">
+      <i class="bi bi-instagram" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white social-icon" aria-label="YouTube" onclick="console.log('Icône YouTube cliquée')">
+      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+<header class="custom-main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/New-Logo-INDH---Al-Fida[1].png" alt="Logo INDH" class="logo-indh"
+                     onmouseout="this.style.transform='scale(1)'" onload="console.log('Logo chargé')">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="initiativeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            L'initiative
+                        </a>
+                           <ul class="dropdown-menu" aria-labelledby="initiativeDropdown">
+                            <li><a class="dropdown-item" href="#">Chantier de Règne</a></li>
+                            <li><a class="dropdown-item" href="#">Discours & Messages Royaux</a></li>
+                            <li><a class="dropdown-item" href="#">Valeurs et principes</a></li>
+                            <li><a class="dropdown-item" href="#">Organisation</a></li>
+                            <li><a class="dropdown-item" href="#">Coopération internationale</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programmes et impact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                            <li><a class="dropdown-item" href="">Phase I</a></li>
+                            <li><a class="dropdown-item" href="">Phase II</a></li>
+                            <li><a class="dropdown-item" href="#">Phase III</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="domainesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Domaines d'action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="domainesDropdown">
+                            <li><a class="dropdown-item" href="#">Développement de la Petite Enfance</a></li>
+                            <li><a class="dropdown-item" href="#">Appui à l’éducation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ingenierieDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ingénierie sociale et innovation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ingenierieDropdown">
+                            <li><a class="dropdown-item" href="#">Innovation 1</a></li>
+                            <li><a class="dropdown-item" href="#">Innovation 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ressourcesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ressourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Ressource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ressource 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+
+   /* Custom Main Header Container (Optional, depends on full layout) */
+.custom-main-header {
+    width: 100%;
+    /* You can add a background or other styling here if the header extends beyond the navbar */
+}
+
+/* Logo Styling */
+.logo-indh {
+    max-height: 90px; /* Original size */
+    filter: drop-shadow(0 2px 8px rgba(33,103,51,0.15)); /* Greenish shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.logo-indh:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar General Styling */
+.navbar {
+    padding-top: 0.75rem; /* Adjust padding if py-3 isn't enough */
+    padding-bottom: 0.75rem;
+    /* Ensure the background is white as per your image and shadow-sm is used */
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* More pronounced but soft shadow */
+}
+
+/* Adjusting Bootstrap's default nav-link and applying your custom styles */
+.custom-nav-link {
+    color: #216733; /* Your specified dark green color */
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 8px 18px !important; /* Override Bootstrap's default padding */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; /* Added transform */
+    letter-spacing: 0.5px;
+    margin: 0 2px; /* Small margin between links */
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Green gradient on hover */
+    color: #fff !important; /* White text on hover */
+    box-shadow: 0 4px 15px rgba(40,167,69,0.25); /* Stronger shadow on hover */
+    text-decoration: none;
+    outline: none; /* Remove outline on focus */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly scale on hover */
+}
+
+/* Active link style */
+.custom-nav-link.active {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Active link uses the gradient */
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(40,167,69,0.15);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* More prominent shadow for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 5px; /* Space from the parent link */
+    padding: 5px 0;
+    background-color: #fff; /* Ensure white background */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px; /* More generous padding */
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.95rem; /* Slightly smaller font size for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #e6f5ea; /* Light green hover for dropdown items */
+    color: #1e7e34; /* Darker green text on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Desktop & Larger (>= 992px, based on navbar-expand-lg) */
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem; /* Give some space between logo and menu */
+    }
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the content area to grow */
+        justify-content: center; /* Centers the ul.navbar-nav */
+    }
+    /* Ensure dropdowns appear correctly on hover on desktop */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        vertical-align: middle; /* Align dropdown arrow */
+    }
+}
+
+/* Mobile & Tablet (<= 991.98px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin-right: auto; /* Push logo to left, toggler to right */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center text in collapsed menu */
+        background-color: #fff; /* Ensure white background for collapsed menu */
+        border-top: 1px solid #eee; /* Subtle separator */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute; /* Take it out of normal flow to stack below toggler */
+        width: 100%;
+        left: 0;
+        top: 100%; /* Position right below the navbar */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for the opened mobile menu */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Make nav links take full width in mobile */
+    }
+
+    .nav-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .custom-nav-link {
+        padding: 12px 15px !important; /* More comfortable padding for mobile links */
+        border-radius: 0 !important; /* Remove rounded corners for full-width links */
+        border-bottom: 1px solid #f8f8f8; /* Subtle separator for mobile links */
+        display: block; /* Make links block-level for full clickable area */
+    }
+
+    .nav-item:last-child .custom-nav-link {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .dropdown-menu {
+        position: static; /* Make dropdown menus flow naturally within the collapsed menu */
+        width: 100%;
+        box-shadow: none; /* No shadow for nested mobile dropdowns */
+        border: none; /* No border for nested mobile dropdowns */
+        background-color: #fcfdfd; /* Slightly different background for nested dropdowns */
+        padding-left: 20px; /* Indent dropdown items on mobile */
+        border-top: 1px solid #f5f5f5; /* Separator for dropdown menu in mobile */
+        border-bottom: 1px solid #f5f5f5;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        text-align: center; /* Center dropdown items in mobile menu */
+        padding: 10px 15px; /* Adjust padding for mobile dropdown items */
+    }
+}
+
+/* Small screen adjustments for logo */
+@media (max-width: 575.98px) {
+    .logo-indh {
+        max-height: 70px; /* Smaller logo on very small screens */
+    }
+}
+</style>
+
+<main>
+ <section>
+    <div class="container py-4">
+
+        <h2 class="section-title mb-4">Coopération internationale</h2>
+
+        <div class="row mb-5 align-items-start">
+            <div class="col-12">
+                <p class="section-title mb-3">
+                    <i class="bi bi-gem section-icon"></i> Une dynamique partenariale au service du développement humain
+                </p>
+                <p class="text-lead-custom">
+                    Depuis son lancement en 2005, l'Initiative Nationale pour le Développement Humain (INDH) bénéficie d'un soutien renforcé de la part de partenaires techniques et financiers internationaux. Cette coopération reflète la reconnaissance du modèle marocain en matière de développement humain, fondé sur l'ancrage territorial, la participation locale et l'innovation sociale.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-5 align-items-start">
+            <div class="col-12">
+                <p class="section-title mb-3">
+                    <i class="bi bi-gem section-icon"></i> Des projets concrets à fort impact
+                </p>
+                <p class="text-lead-custom">
+                    La coopération internationale a contribué à la mise en œuvre de projets ciblés et structurants :
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <i class="bi bi-person-fill card-icon"></i> <h5 class="fw-bold mb-3">Petite enfance et santé maternelle</h5>
+                    <p class="card-text text-start">
+                        Partenariat avec la Banque mondiale (450 M USD) et l'UNICEF, pour le développement intégré de la petite enfance, notamment en milieu rural, avec le lancement du Dispositif de Santé Communautaire (DSC) dans 58 centres de santé.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <i class="bi bi-people-fill card-icon"></i> <h5 class="fw-bold mb-3">Insertion économique des jeunes</h5>
+                    <p class="card-text text-start">
+                        Soutien de la BID pour la mise en place de plateformes de jeunes dans la région de l'Oriental, accompagnement à l'entrepreneuriat, formation et développement de l'économie sociale et solidaire.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 align-items-start">
+            <div class="col-12">
+                <p class="section-title mb-3">
+                    <i class="bi bi-gem section-icon"></i> Une montée en compétences et un effet de levier
+                </p>
+                <p class="text-lead-custom mb-4">
+                    L'apport international ne se limite pas au financement. Il a permis de :
+                </p>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="skill-item">
+                            <p class="mb-0">Professionaliser <span class="skill-description">l'écosystème associatif</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skill-item">
+                            <p class="mb-0">Tester <span class="skill-description">des solutions innovantes (périscolaire, santé, gouvernance locale)</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skill-item">
+                            <p class="mb-0">Renforcer <span class="skill-description">les capacités locales en ingénierie sociale</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skill-item">
+                            <p class="mb-0">Essaimer <span class="skill-description">des modèles reproductibles à l'échelle nationale</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 align-items-start">
+            <div class="col-12">
+                <p class="section-title mb-3">
+                    <i class="bi bi-gem section-icon"></i> Exemples de partenaires mobilisés aux côtés de l'INDH
+                </p>
+                <p class="text-lead-custom mb-3">
+                    Au fil des années, de nombreux acteurs internationaux ont appuyé les programmes de l'INDH :
+                </p>
+                <div class="partners-list">
+                    <ul class="list-unstyled-custom">
+                        <li>Banque Mondiale</li>
+                        <li>Union Européenne</li>
+                        <li>Banque Islamique de Développement (BID)</li>
+                        <li>UNICEF</li>
+                        <li>Fonds Arabe pour le Développement Économique et Social (FADES)</li>
+                        <li>FIDA, OPEP, GPOBA, MCC, et des pays partenaires comme le Japon, l'Allemagne (KfW), l'Italie, la France, l'Espagne et l'Arabie saoudite.</li>
+                    </ul>
+                </div>
+                <p class="text-lead-custom mt-4">
+                    Ces partenariats prennent la forme de financements directs, dons, assistance technique, et mobilisation d'expertise.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif; /* Example font, adjust as needed */
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 960px; /* Adjust max-width to match the image's content width */
+        }
+        .section-title {
+            color: #167e45; /* Blue color for titles, adjust if needed */
+            font-weight: bold;
+            font-size: 1.5rem; /* Adjust as needed */
+            margin-bottom: 1.5rem;
+        }
+        .section-icon {
+            color: #a3ac19; /* Blue for diamond icons */
+            font-size: 1.2rem;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        .text-lead-custom {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .card-custom {
+            border: none;
+            background-color: #f8f9fa; /* Light grey background for cards */
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            color:#167e45; /* Blue for the specific icons */
+            margin-bottom: 0.75rem;
+        }
+        .list-unstyled-custom li {
+            position: relative;
+            padding-left: 1.5rem; /* Space for the custom bullet */
+            margin-bottom: 0.5rem;
+        }
+        .list-unstyled-custom li::before {
+            content: ""; /* Empty content for the bullet */
+            position: absolute;
+            left: 0;
+            top: 0.5rem; /* Adjust vertical alignment of the bullet */
+            width: 8px;
+            height: 8px;
+            background-color: #a3ac19; /* Blue bullet */
+            border-radius: 50%; /* Circular bullet */
+        }
+        .skill-item {
+            border-left: 2px solid #167e45; /* Blue line on the left */
+            padding-left: 0.75rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .skill-description {
+            font-weight: normal;
+        }
+        .partners-list ul {
+            list-style: none; /* Remove default list style */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Use flexbox for two columns */
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .partners-list li {
+            width: 100%; /* Default to full width on small screens */
+            margin-bottom: 0.5rem;
+        }
+        @media (min-width: 768px) { /* Medium devices and up */
+            .partners-list li {
+                width: 50%; /* Two columns */
+            }
+        }
+    </style>
+ </section>
+
+
+</main>
+<br> 
+<!-- FOOTER -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Logo ou Titre -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase">MonEntreprise</h5>
+        <p>
+          Votre partenaire de confiance pour des solutions sur mesure et professionnelles
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Liens</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#realisations" class="text-white text-decoration-none">Réalisations</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Rabat, Maroc</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contact@monentreprise.ma</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +212 6 12 34 56 78</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center text-md-start">
+        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mt-4 border-top border-light pt-3">
+    &copy; 2025 MonEntreprise. Tous droits réservés
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+

@@ -1,0 +1,200 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .social-icon svg {
+      transition: transform 0.3s;
+    }
+    .social-icon:hover svg {
+      transform: scale(1.2);
+    }
+    .top-bar {
+      background-color: #13653f;
+      color: white;
+    }
+    .main-nav a {
+      color: black;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    .main-nav a:hover {
+      color: #13653f;
+      text-decoration: underline;
+    }
+    .details-btn {
+      position: absolute;
+      top: 50%;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+    background-color: #13653f;
+    color: white;
+    border: none;
+    padding: 20px 55px;
+    font-size: 22px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+    }
+    /* Discours Royal section */
+.bg-success {
+  background-color: #13653f !important; /* même vert que la top bar */
+}
+
+.btn-light:hover {
+  background-color: #e6e6e6;
+}
+/* Section Discours Royal pleine largeur */
+#discours-royal-section {
+  width: 100vw; /* largeur écran */
+  background: linear-gradient(135deg, #2f8a2f, #1e5d1e); /* dégradé vert */
+  color: #ffffff;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Conteneur limité pour le contenu */
+#discours-royal-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Texte */
+#discours-royal-section h3 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+ 
+}
+
+#discours-royal-section p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+}
+
+/* Image */
+#discours-royal-section img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#discours-royal-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Bouton */
+#discours-royal-section .btn-custom {
+  background-color: #ffffff;
+  color: #2f8a2f;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#discours-royal-section .btn-custom:hover,
+#discours-royal-section .btn-custom:focus {
+  background-color: #1e5d1e;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(30, 93, 30, 0.8);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  #discours-royal-section h3 {
+    font-size: 1.8rem;
+  }
+  #discours-royal-section p {
+    font-size: 1rem;
+  }
+}
+
+.green-box-lg {
+  background-color: #216733;
+  color: white;
+  border-radius: 40px;
+  padding: 100px 60px;
+  width: 320px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.green-box-lg:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.programme-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  color: black;
+  padding: 15px 20px;
+  border-top-right-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+#programmes img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+}
+
+.gouv-box {
+  background-color: #1e5631;
+  border-radius: 50px;
+  height: 260px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gouv-box:hover {
+  transform: scale(1.05);
+}
+
+
+.realisations-section {
+  background: linear-gradient(135deg, #1b5e20, #779c79); /* dégradé vert */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-btn {
+  transition: all 0.3s ease;
+  border-width: 2px;
+}
+
+.custom-btn:hover {
+  background-color: #ffffff;
+  color: #1b5e20;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+

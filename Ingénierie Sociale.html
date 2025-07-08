@@ -1,0 +1,722 @@
+<head>
+  <meta charset="UTF-8">
+  <title>INDH - Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    console.log("Chargement de la page INDH...");
+  </script>
+</head>
+<body onload="console.log('Page d\'accueil chargée avec succès');">
+
+<!-- Bande supérieure avec réseaux sociaux -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-2">Suivez nous sur :</span>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Facebook" onclick="console.log('Icône Facebook cliquée')">
+      <i class="bi bi-facebook" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Instagram" onclick="console.log('Icône Instagram cliquée')">
+      <i class="bi bi-instagram" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white social-icon" aria-label="YouTube" onclick="console.log('Icône YouTube cliquée')">
+      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Logo + Menu -->
+<header class="custom-main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/New-Logo-INDH---Al-Fida[1].png" alt="Logo INDH" class="logo-indh"
+                     onmouseout="this.style.transform='scale(1)'" onload="console.log('Logo chargé')">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="initiativeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            L'initiative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="initiativeDropdown">
+                            <li><a class="dropdown-item" href="#">Chantier de Règne</a></li>
+                            <li><a class="dropdown-item" href="#">Discours & Messages Royaux</a></li>
+                            <li><a class="dropdown-item" href="#">Valeurs et principes</a></li>
+                            <li><a class="dropdown-item" href="#">Organisation</a></li>
+                            <li><a class="dropdown-item" href="#">Coopération internationale</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programmes et impact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                            <li><a class="dropdown-item" href="phase1.html">Phase I</a></li>
+                            <li><a class="dropdown-item" href="phase2.html">Phase II</a></li>
+                            <li><a class="dropdown-item" href="phase3.html">Phase III</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="domainesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Domaines d'action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="domainesDropdown">
+                            <li><a class="dropdown-item" href="#">Développement de la Petite Enfance</a></li>
+                            <li><a class="dropdown-item" href="#">Appui à l’éducation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ingenierieDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ingénierie sociale et innovation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ingenierieDropdown">
+                            <li><a class="dropdown-item" href="#">Innovation 1</a></li>
+                            <li><a class="dropdown-item" href="#">Innovation 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ressourcesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ressourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Ressource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ressource 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+
+   /* Custom Main Header Container (Optional, depends on full layout) */
+.custom-main-header {
+    width: 100%;
+    /* You can add a background or other styling here if the header extends beyond the navbar */
+}
+
+/* Logo Styling */
+.logo-indh {
+    max-height: 90px; /* Original size */
+    filter: drop-shadow(0 2px 8px rgba(33,103,51,0.15)); /* Greenish shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.logo-indh:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar General Styling */
+.navbar {
+    padding-top: 0.75rem; /* Adjust padding if py-3 isn't enough */
+    padding-bottom: 0.75rem;
+    /* Ensure the background is white as per your image and shadow-sm is used */
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* More pronounced but soft shadow */
+}
+
+/* Adjusting Bootstrap's default nav-link and applying your custom styles */
+.custom-nav-link {
+    color: #216733; /* Your specified dark green color */
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 8px 18px !important; /* Override Bootstrap's default padding */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; /* Added transform */
+    letter-spacing: 0.5px;
+    margin: 0 2px; /* Small margin between links */
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Green gradient on hover */
+    color: #fff !important; /* White text on hover */
+    box-shadow: 0 4px 15px rgba(40,167,69,0.25); /* Stronger shadow on hover */
+    text-decoration: none;
+    outline: none; /* Remove outline on focus */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly scale on hover */
+}
+
+/* Active link style */
+.custom-nav-link.active {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Active link uses the gradient */
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(40,167,69,0.15);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* More prominent shadow for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 5px; /* Space from the parent link */
+    padding: 5px 0;
+    background-color: #fff; /* Ensure white background */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px; /* More generous padding */
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.95rem; /* Slightly smaller font size for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #e6f5ea; /* Light green hover for dropdown items */
+    color: #1e7e34; /* Darker green text on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Desktop & Larger (>= 992px, based on navbar-expand-lg) */
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem; /* Give some space between logo and menu */
+    }
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the content area to grow */
+        justify-content: center; /* Centers the ul.navbar-nav */
+    }
+    /* Ensure dropdowns appear correctly on hover on desktop */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        vertical-align: middle; /* Align dropdown arrow */
+    }
+}
+
+/* Mobile & Tablet (<= 991.98px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin-right: auto; /* Push logo to left, toggler to right */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center text in collapsed menu */
+        background-color: #fff; /* Ensure white background for collapsed menu */
+        border-top: 1px solid #eee; /* Subtle separator */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute; /* Take it out of normal flow to stack below toggler */
+        width: 100%;
+        left: 0;
+        top: 100%; /* Position right below the navbar */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for the opened mobile menu */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Make nav links take full width in mobile */
+    }
+
+    .nav-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .custom-nav-link {
+        padding: 12px 15px !important; /* More comfortable padding for mobile links */
+        border-radius: 0 !important; /* Remove rounded corners for full-width links */
+        border-bottom: 1px solid #f8f8f8; /* Subtle separator for mobile links */
+        display: block; /* Make links block-level for full clickable area */
+    }
+
+    .nav-item:last-child .custom-nav-link {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .dropdown-menu {
+        position: static; /* Make dropdown menus flow naturally within the collapsed menu */
+        width: 100%;
+        box-shadow: none; /* No shadow for nested mobile dropdowns */
+        border: none; /* No border for nested mobile dropdowns */
+        background-color: #fcfdfd; /* Slightly different background for nested dropdowns */
+        padding-left: 20px; /* Indent dropdown items on mobile */
+        border-top: 1px solid #f5f5f5; /* Separator for dropdown menu in mobile */
+        border-bottom: 1px solid #f5f5f5;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        text-align: center; /* Center dropdown items in mobile menu */
+        padding: 10px 15px; /* Adjust padding for mobile dropdown items */
+    }
+}
+
+/* Small screen adjustments for logo */
+@media (max-width: 575.98px) {
+    .logo-indh {
+        max-height: 70px; /* Smaller logo on very small screens */
+    }
+}
+</style>
+<main>
+ <section class="section-padding" style="background-color: #fdfdf9;">
+        <div class="container">
+            <h1 class="main-title" style="color:  #216733;  text-align: center;">Ingénierie Sociale</h1>
+            <h2 class="sub-title" style="color:  #d3c38e;  text-align: center;">Définition de l'Ingénierie Sociale</h2>
+            <p class="section-description">
+                L’Ingénierie Sociale constitue un pilier fondamental de la phase III de l’INDH. Elle désigne l'ensemble des méthodes, des outils et des dispositifs mettant à profit le savoir-expérimenter, ajuster et mettre en œuvre des réponses adaptées aux défis du développement humain, dans une logique de proximité, d'impact et de durabilité.<br>
+                Dans cette dynamique, l'INDH s'affirme comme un acteur central de transformation, en assumant pleinement trois rôles complémentaires:
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>INCUBATEUR</h5>
+                        <p>
+                            en développant et en testant des solutions novatrices pouvant être modélisées et étendues à l'échelle nationale (centres de développement des jeunes ou le dispositif de santé communautaire).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>CATALYSEUR</h5>
+                        <p>
+                            en générant des synergies opérationnelles entre les acteurs publics, privés et associatifs à travers des partenariats stratégiques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>FÉDÉRATEUR</h5>
+                        <p>
+                            en structurant un écosystème d'acteurs en faveur d'une vision partagée du développement humain, en cohérence avec les orientations nationales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="section-description text-center">
+                Cette approche permet à l'INDH de traduire la Vision Royale en mécanismes concrets de transformation sociale, au plus près des besoins des territoires et des populations cibles.
+            </p>
+
+            <h3 class="section-title-dot">Principes novateurs</h3>
+            <p class="section-description">
+                L'Ingénierie Sociale déployée par l'INDH repose sur plusieurs principes structurants:
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>Une logique d'expérimentation</h5>
+                        <p>
+                            (« test & learn »), avec des projets pilotes menés dans les territoires (comme les plateformes des jeunes et le dispositif de santé communautaire), avant leur extension à l'échelle nationale.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>Une approche ascendante et participative</h5>
+                        <p>
+                            fondée sur le diagnostic local et la consultation active des acteurs territoriaux.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>Un ancrage dans la théorie du changement</h5>
+                        <p>
+                            avec des objectifs clairs, des indicateurs attendus identifiés et des mécanismes d'ajustement opérationnel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>Une complémentarité avec les politiques publiques</h5>
+                        <p>
+                            grâce à des partenariats étroits avec les ministères, les collectivités, les agences techniques et la société civile.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-card">
+                        <h5>Une orientation vers l'impact durable</h5>
+                        <p>
+                            qui privilégie la qualité, l'évaluation et le renforcement des résultats plutôt que leur simple reproduction.
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="col-md-6 col-lg-4 mb-4 d-none d-lg-block">
+                    </div>
+            </div>
+
+            <h3 class="section-title-dot">Formation</h3>
+            <p class="section-description">
+                La formation constitue depuis 2005 un levier stratégique de l'action de l'INDH pour renforcer les capacités de son écosystème et garantir l'efficacité de la mise en œuvre de ses programmes. L'approche a progressivement évolué pour s'adapter aux thématiques de développement humain et aux enjeux propres à chaque phase.
+            </p>
+            <p class="section-description">
+                Durant la phase III, la formation a été modélisée comme un outil d'appropriation des programmes, de diffusion des nouvelles rationalités (capital humain, ingénierie sociale, théorie du changement) et l'amélioration continue des compétences techniques et comportementales des acteurs impliqués. Elle a permis d'accompagner la professionnalisation des intervenants, notamment à travers :
+            </p>
+
+            <ul class="styled-list">
+                <li>le renforcement des compétences en pilotage de la performance, diagnostic territorial, gestion de projet, communication et collaboration ;</li>
+                <li>l'élargissement des publics cibles aux membres des comités de gouvernance locaux, provinciaux, régionaux, aux CR-INDH et aux Divisions de l'Action Sociale (DAS) ;</li>
+                <li>le déploiement d'un dispositif structuré à l'échelle régionale, sur la base de plans pluriannuels élaborés par les CR-INDH en coordination avec les DAS.</li>
+            </ul>
+            <p class="section-description">
+                Un vivier de formateurs internes certifiés a été constitué afin de garantir la qualité et l'harmonisation des actions de formation à travers le territoire.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-stats-block no-icon">
+                        <h3>148 452</h3>
+                        <p>personnes formées à travers 953 actions de formation réalisées à l'échelle nationale</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-stats-block no-icon">
+                        <h3>20 151</h3>
+                        <p>formateurs en faveur de l'écosystème INDH au niveau Central</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="white-stats-block no-icon">
+                        <h3>128 301</h3>
+                        <p>personnes formées à travers 942 actions de formation au niveau territorial par les CR-INDH et les DAS</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+<style>
+     body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+
+        /* General Titles & Descriptions */
+        .main-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .section-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 3rem;
+        }
+
+        /* Card Styles (used for various sections) */
+        .white-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 180px; /* Consistent height for similar cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+        }
+        .white-card h5 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+        .white-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+        .white-card .card-icon { /* For SVG icons inside cards if any */
+            font-size: 3rem;
+            color: #007bff; /* Example icon color, adjust as needed */
+            margin-bottom: 1rem;
+        }
+
+        /* Section Title with Dot */
+        .section-title-dot {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title-dot::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #28a745; /* Green dot */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .axe-subtitle { /* For "Axe 1", "Principes novateurs" titles */
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Bullet Points List */
+        .styled-list {
+            list-style: none; /* Remove default bullet */
+            padding-left: 0;
+            margin-bottom: 2.5rem;
+        }
+        .styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        .styled-list li::before {
+            content: '•'; /* Custom bullet point */
+            color: #28a745; /* Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Dark Stats Blocks (Programme 3 & 1 styles) */
+        .dark-stats-block {
+            background-color: #34495e; /* Darker blue/grey background */
+            color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 150px; /* Consistent height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dark-stats-block.tall { /* For "Ecoute et Orientation" */
+            min-height: 180px;
+        }
+        .dark-stats-block .header-icon {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .dark-stats-block h6 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .dark-stats-block .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .dark-stats-block .stats-item {
+            flex: 1;
+            min-width: 120px;
+            padding: 0.5rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .dark-stats-block .stats-item:last-child,
+        .dark-stats-block .stats-item:nth-child(2n) { /* No border for every second item on md+ */
+            border-right: none;
+        }
+        .dark-stats-block .stats-item:nth-child(2) {
+            border-right: none; /* Specific for 2-column layout */
+        }
+         /* Fix for 3 column border */
+        .dark-stats-block .stats-item:nth-child(3n) {
+            border-right: none;
+        }
+        .dark-stats-block .stats-item h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28a745; /* Green for numbers */
+            margin-bottom: 0.2rem;
+        }
+        .dark-stats-block .stats-item p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 0;
+            line-height: 1.3;
+        }
+
+        /* White Stats Blocks (Programme 4 stats & Formation stats) */
+        .white-stats-block {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 120px; /* Consistent height for these smaller blocks */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .white-stats-block .icon {
+            font-size: 2.5rem;
+            color: #007bff; /* Bootstrap primary blue */
+            margin-bottom: 0.5rem;
+        }
+        .white-stats-block h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745; /* Green for numbers */
+            margin-bottom: 0.2rem;
+        }
+        .white-stats-block p {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+        .white-stats-block.no-icon {
+            min-height: 100px; /* Slightly smaller if no icon */
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .dark-stats-block, .white-card, .white-stats-block {
+                min-height: auto;
+            }
+            .dark-stats-block .stats-grid {
+                flex-direction: column;
+            }
+            .dark-stats-block .stats-item {
+                border-right: none !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                width: 100%;
+            }
+            .dark-stats-block .stats-item:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .main-title { font-size: 1.75rem; }
+            .sub-title { font-size: 1.25rem; }
+            .section-title-dot { font-size: 1.2rem; }
+            .axe-subtitle { font-size: 1.1rem; }
+
+            .white-card, .white-stats-block {
+                padding: 1rem;
+            }
+            .white-stats-block .icon {
+                font-size: 2rem;
+            }
+            .white-stats-block h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</main>
+
+
+<br> 
+<!-- FOOTER -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Logo ou Titre -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase">MonEntreprise</h5>
+        <p>
+          Votre partenaire de confiance pour des solutions sur mesure et professionnelles
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Liens</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#realisations" class="text-white text-decoration-none">Réalisations</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Rabat, Maroc</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contact@monentreprise.ma</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +212 6 12 34 56 78</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center text-md-start">
+        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mt-4 border-top border-light pt-3">
+    &copy; 2025 MonEntreprise. Tous droits réservés
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

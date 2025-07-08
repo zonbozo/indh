@@ -1,0 +1,591 @@
+<head>
+  <meta charset="UTF-8">
+  <title>INDH - Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    console.log("Chargement de la page INDH...");
+  </script>
+</head>
+
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-2">Suivez nous sur :</span>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Facebook" onclick="console.log('Icône Facebook cliquée')">
+      <i class="bi bi-facebook" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Instagram" onclick="console.log('Icône Instagram cliquée')">
+      <i class="bi bi-instagram" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white social-icon" aria-label="YouTube" onclick="console.log('Icône YouTube cliquée')">
+      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+<header class="custom-main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/New-Logo-INDH---Al-Fida[1].png" alt="Logo INDH" class="logo-indh"
+                     onmouseout="this.style.transform='scale(1)'" onload="console.log('Logo chargé')">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="initiativeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            L'initiative
+                        </a>
+                           <ul class="dropdown-menu" aria-labelledby="initiativeDropdown">
+                            <li><a class="dropdown-item" href="#">Chantier de Règne</a></li>
+                            <li><a class="dropdown-item" href="#">Discours & Messages Royaux</a></li>
+                            <li><a class="dropdown-item" href="#">Valeurs et principes</a></li>
+                            <li><a class="dropdown-item" href="#">Organisation</a></li>
+                            <li><a class="dropdown-item" href="#">Coopération internationale</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programmes et impact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                            <li><a class="dropdown-item" href="">Phase I</a></li>
+                            <li><a class="dropdown-item" href="">Phase II</a></li>
+                            <li><a class="dropdown-item" href="#">Phase III</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="domainesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Domaines d'action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="domainesDropdown">
+                            <li><a class="dropdown-item" href="#">Développement de la Petite Enfance</a></li>
+                            <li><a class="dropdown-item" href="#">Appui à l’éducation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ingenierieDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ingénierie sociale et innovation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ingenierieDropdown">
+                            <li><a class="dropdown-item" href="#">Innovation 1</a></li>
+                            <li><a class="dropdown-item" href="#">Innovation 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ressourcesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ressourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Ressource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ressource 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+
+   /* Custom Main Header Container (Optional, depends on full layout) */
+.custom-main-header {
+    width: 100%;
+    /* You can add a background or other styling here if the header extends beyond the navbar */
+}
+
+/* Logo Styling */
+.logo-indh {
+    max-height: 90px; /* Original size */
+    filter: drop-shadow(0 2px 8px rgba(33,103,51,0.15)); /* Greenish shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.logo-indh:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar General Styling */
+.navbar {
+    padding-top: 0.75rem; /* Adjust padding if py-3 isn't enough */
+    padding-bottom: 0.75rem;
+    /* Ensure the background is white as per your image and shadow-sm is used */
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* More pronounced but soft shadow */
+}
+
+/* Adjusting Bootstrap's default nav-link and applying your custom styles */
+.custom-nav-link {
+    color: #216733; /* Your specified dark green color */
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 8px 18px !important; /* Override Bootstrap's default padding */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; /* Added transform */
+    letter-spacing: 0.5px;
+    margin: 0 2px; /* Small margin between links */
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Green gradient on hover */
+    color: #fff !important; /* White text on hover */
+    box-shadow: 0 4px 15px rgba(40,167,69,0.25); /* Stronger shadow on hover */
+    text-decoration: none;
+    outline: none; /* Remove outline on focus */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly scale on hover */
+}
+
+/* Active link style */
+.custom-nav-link.active {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Active link uses the gradient */
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(40,167,69,0.15);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* More prominent shadow for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 5px; /* Space from the parent link */
+    padding: 5px 0;
+    background-color: #fff; /* Ensure white background */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px; /* More generous padding */
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.95rem; /* Slightly smaller font size for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #e6f5ea; /* Light green hover for dropdown items */
+    color: #1e7e34; /* Darker green text on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Desktop & Larger (>= 992px, based on navbar-expand-lg) */
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem; /* Give some space between logo and menu */
+    }
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the content area to grow */
+        justify-content: center; /* Centers the ul.navbar-nav */
+    }
+    /* Ensure dropdowns appear correctly on hover on desktop */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        vertical-align: middle; /* Align dropdown arrow */
+    }
+}
+
+/* Mobile & Tablet (<= 991.98px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin-right: auto; /* Push logo to left, toggler to right */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center text in collapsed menu */
+        background-color: #fff; /* Ensure white background for collapsed menu */
+        border-top: 1px solid #eee; /* Subtle separator */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute; /* Take it out of normal flow to stack below toggler */
+        width: 100%;
+        left: 0;
+        top: 100%; /* Position right below the navbar */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for the opened mobile menu */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Make nav links take full width in mobile */
+    }
+
+    .nav-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .custom-nav-link {
+        padding: 12px 15px !important; /* More comfortable padding for mobile links */
+        border-radius: 0 !important; /* Remove rounded corners for full-width links */
+        border-bottom: 1px solid #f8f8f8; /* Subtle separator for mobile links */
+        display: block; /* Make links block-level for full clickable area */
+    }
+
+    .nav-item:last-child .custom-nav-link {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .dropdown-menu {
+        position: static; /* Make dropdown menus flow naturally within the collapsed menu */
+        width: 100%;
+        box-shadow: none; /* No shadow for nested mobile dropdowns */
+        border: none; /* No border for nested mobile dropdowns */
+        background-color: #fcfdfd; /* Slightly different background for nested dropdowns */
+        padding-left: 20px; /* Indent dropdown items on mobile */
+        border-top: 1px solid #f5f5f5; /* Separator for dropdown menu in mobile */
+        border-bottom: 1px solid #f5f5f5;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        text-align: center; /* Center dropdown items in mobile menu */
+        padding: 10px 15px; /* Adjust padding for mobile dropdown items */
+    }
+}
+
+/* Small screen adjustments for logo */
+@media (max-width: 575.98px) {
+    .logo-indh {
+        max-height: 70px; /* Smaller logo on very small screens */
+    }
+}
+</style>
+
+<main>
+<section class="petite-enfance-section py-5">
+    <div class="container">
+        <!-- Titre principal -->
+        <h2 class="section-title mb-4">Développement de la Petite Enfance</h2>
+
+        <!-- Message Royal -->
+        <div class="mb-5">
+            <h4 class="section-subtitle">Message Royal</h4>
+            <blockquote class="blockquote-custom mt-3">
+                <p>
+                    “ […] Nous saluons l’initiative louable d’organiser cet événement et le choix judicieux du thème retenu : « Développer la petite enfance, un engagement envers l’avenir », et Nous formons le souhait que ces assises permettent d’en approfondir l’examen et l’analyse.
+Nous avons constamment attaché une importance singulière à ce thème plus que jamais d’actualité, en accordant une attention particulière à la promotion des conditions de l’enfance ; celle-ci constitue en effet le pilier de la société, la force motrice qui lui permet de se projeter dans un avenir porteur d’un essor économique et social, global et inclusif. […] A ce propos, Nous mettons particulièrement en exergue la nécessité d’améliorer le système de santé, en attachant un intérêt accru à la santé maternelle et infantile, en assurant un accès équitable aux prestations sociales ; en proposant une offre cohérente dans le domaine de l’enseignement préscolaire, et en veillant à sa généralisation, notamment, dans le monde rural, pour lutter contre l’abandon scolaire.
+Il importe également, de mener auprès des personnes ciblées, des campagnes de sensibilisation à l’importance de ce sujet, en insistant sur ses retombées positives pour l’enfant, la famille, la société. […] ”
+                </p>
+                <footer class="blockquote-footer mt-2">Extraits du messages de Sa Majesté Le Roi Mohammed VI, Que Dieu L’Assiste, aux participants aux premières assises nationales du développement humain.
+                 19 septembre 2019</footer>
+            </blockquote>
+        </div>
+
+        <!-- Pourquoi investir -->
+        <div class="mb-5">
+            <h4 class="section-subtitle">Pourquoi l’INDH investit dans le développement de la petite enfance ?</h4>
+            <p>Les mille premiers jours de vie sont décisifs pour le développement de l’enfant. Les études prouvent que des investissements précoces génèrent des retombées majeures en réussite scolaire, santé et citoyenneté.</p>
+            <ul class="list-custom">
+                <li>Ériger la petite enfance en levier structurant de capital humain</li>
+                <li>Offrir les mêmes chances à tous les enfants, partout au Maroc</li>
+                <li>Soutenir une croissance inclusive reposant sur des citoyens épanouis</li>
+            </ul>
+        </div>
+
+        <!-- Interventions -->
+        <div class="mb-5">
+            <h4 class="section-subtitle">Les interventions de l’INDH</h4>
+
+            <div class="mb-4">
+                <h5 class="text-success fw-bold">Santé et nutrition</h5>
+                <p>894 centres construits ou rénovés, 997 équipements livrés, 1782 ambulances déployées. 882 campagnes médicales organisées. Depuis 2019, lancement du DSC dans 56 centres avec l’UNICEF.</p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="text-success fw-bold">Éducation préscolaire</h5>
+                <p>Plus de 11 000 salles créées pour près de 301 000 enfants. Taux de préscolarisation rural passé de 33% à 91%. Un modèle 100% marocain, gratuit, encadré, et reconnu à l’international.</p>
+            </div>
+        </div>
+
+        <!-- Méthodologie -->
+        <div>
+            <h4 class="section-subtitle">Approches méthodologiques innovantes</h4>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h6 class="fw-bold">DSC</h6>
+                        <p>Maillage territorial : relais communautaires, centres ruraux, Dar Al Oumouma. Objectif : lever les freins aux soins.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h6 class="fw-bold">Préscolaire marocain</h6>
+                        <p>Un modèle basé sur qualité, formation, standardisation et évaluation. Cité comme référence par l’UNICEF.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h6 class="fw-bold">Communication comportementale</h6>
+                        <p>Campagnes nationales (23M personnes touchées) : allaitement, 1000 jours, suivi prénatal. Co-construit avec le ministère de la Santé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+
+    <h3 class="section-title mb-4">Les interventions de l’INDH en faveur du développement de la petite enfance</h3>
+    <p>Conformément aux Hautes Orientations de Sa Majesté Le Roi Mohammed VI, Que Dieu L'assiste, l’INDH a intensifié, depuis 2019, son action en faveur du développement de la petite enfance...</p>
+
+    <h4 class="text-success mt-5">- Santé et nutrition de la mère et de l’enfant</h4>
+    <p>De 2005 à 2023, l’INDH a financé la construction/réhabilitation de <strong>894 centres de santé</strong>, l’acquisition de <strong>997 équipements biomédicaux</strong>, et le déploiement de <strong>1782 ambulances</strong>.</p>
+    <p>882 caravanes et campagnes ont assuré des dépistages, vaccinations et consultations. Plus de 150 <strong>Dar Al Oumouma</strong> ont hébergé et sensibilisé les futures mères.</p>
+    <p>Depuis 2019, le <strong>Dispositif de Santé Communautaire (DSC)</strong> est expérimenté dans <strong>56 centres</strong> sur 14 provinces, en partenariat avec le Ministère de la Santé et l’UNICEF.</p>
+    <p>Des campagnes nationales de sensibilisation sur l’<strong>allaitement maternel</strong> et les <strong>1000 premiers jours</strong> touchent des millions de familles à travers tout le Maroc.</p>
+
+    <h4 class="text-success mt-5">- Éducation préscolaire</h4>
+    <p>Un modèle marocain de préscolaire <strong>gratuit et de qualité</strong> a été mis en place avec le ministère, combinant kit pédagogique, formation, normes de construction et suivi-évaluation.</p>
+    <p>Depuis 2019 : <strong>+10 000 unités créées</strong>, <strong>11 000 classes</strong>, couvrant près de <strong>10 600 douars</strong>. Plus de <strong>301 000 enfants</strong> ont bénéficié du préscolaire, dont <strong>132 000 en 2023-2024</strong>.</p>
+    <p>L’investissement cumulé atteint <strong>près de 4 milliards de dirhams</strong>. Le taux de préscolarisation en milieu rural est passé de <strong>33,1%</strong> à <strong>91,4%</strong>, avec <strong>92,7%</strong> chez les filles.</p>
+    <p>Pendant la Covid-19, des contenus numériques ont assuré la continuité pédagogique (ex: <em>Atfalouna</em>). Après le séisme d’Al Haouz, <strong>68 unités</strong> ont été réhabilitées.</p>
+
+    <h4 class="text-success mt-5">- Approches méthodologiques innovantes</h4>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="methodo-card p-3 h-100">
+          <h6 class="text-success fw-bold">Dispositif de santé communautaire (DSC)</h6>
+          <p>Un réseau local efficace reliant relais communautaires, centres de santé et Dar Al Oumouma pour lever les freins aux soins.</p>
+        <a href="#" class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold shadow-sm mt-3" style="transition: background 0.2s, color 0.2s;">
+            <i class="bi bi-info-circle me-2"></i>En savoir plus
+        </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="methodo-card p-3 h-100">
+          <h6 class="text-success fw-bold">Modèle de préscolaire marocain</h6>
+          <p>Reconnu par les acteurs nationaux et internationaux. Basé sur la qualité, la gratuité, la standardisation et l’évaluation.</p>
+            <a href="#" class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold shadow-sm mt-3" style="transition: background 0.2s, color 0.2s;">
+            <i class="bi bi-info-circle me-2"></i>En savoir plus
+        </a>        
+    </div>
+      </div>
+      <div class="col-md-4">
+        <div class="methodo-card p-3 h-100">
+          <h6 class="text-success fw-bold">Stratégie CCSC</h6>
+          <p>Campagnes nationales (2023–2025) touchant plus de <strong>23 millions</strong> de personnes : allaitement, 1000 jours, suivi prénatal.</p>
+             <a href="#" class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold shadow-sm mt-3" style="transition: background 0.2s, color 0.2s;">
+            <i class="bi bi-info-circle me-2"></i>En savoir plus
+        </a>        </div>
+      </div>
+    </div>
+
+  </div>
+    <style>
+/* Section principale */
+.petite-enfance-section {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Titres */
+.section-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #198754;
+    border-left: 5px solid #ffc107;
+    padding-left: 15px;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #216733;
+    margin-bottom: 1rem;
+}
+
+/* Blockquote personnalisé */
+.blockquote-custom {
+    background: #fff;
+    border-left: 4px solid #198754;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Liste personnalisée */
+.list-custom {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-custom li {
+    margin-bottom: 0.6rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Cartes simples */
+.card-custom {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(33, 103, 51, 0.06);
+    margin-bottom: 1rem;
+}
+
+.card-custom h6 {
+    color: #198754;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .section-title {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    .card-custom {
+        font-size: 0.97rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .petite-enfance-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .section-title {
+        font-size: 1.25rem;
+        padding-left: 8px;
+    }
+    .section-subtitle {
+        font-size: 0.98rem;
+    }
+    .card-custom {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+    .row.g-4 > [class^="col-"] {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-title {
+        font-size: 1.1rem;
+        padding-left: 6px;
+    }
+    .section-subtitle {
+        font-size: 0.93rem;
+    }
+    .card-custom {
+        font-size: 0.93rem;
+        padding: 0.6rem;
+    }
+}
+
+
+.interventions-section {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  border-left: 5px solid #198754;
+  padding-left: 15px;
+  color: #198754;
+}
+
+.methodo-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+    </style>
+
+
+
+</section>
+
+
+</main>
+<br> 
+<!-- FOOTER -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Logo ou Titre -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase">MonEntreprise</h5>
+        <p>
+          Votre partenaire de confiance pour des solutions sur mesure et professionnelles
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Liens</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#realisations" class="text-white text-decoration-none">Réalisations</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Rabat, Maroc</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contact@monentreprise.ma</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +212 6 12 34 56 78</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center text-md-start">
+        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mt-4 border-top border-light pt-3">
+    &copy; 2025 MonEntreprise. Tous droits réservés
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+

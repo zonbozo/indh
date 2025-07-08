@@ -1,0 +1,1299 @@
+<head>
+  <meta charset="UTF-8">
+  <title>INDH - Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    console.log("Chargement de la page INDH...");
+  </script>
+</head>
+<body onload="console.log('Page d\'accueil chargée avec succès');">
+
+<!-- Bande supérieure avec réseaux sociaux -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-2">Suivez nous sur :</span>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Facebook" onclick="console.log('Icône Facebook cliquée')">
+      <i class="bi bi-facebook" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Instagram" onclick="console.log('Icône Instagram cliquée')">
+      <i class="bi bi-instagram" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white social-icon" aria-label="YouTube" onclick="console.log('Icône YouTube cliquée')">
+      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Logo + Menu -->
+<header class="custom-main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/New-Logo-INDH---Al-Fida[1].png" alt="Logo INDH" class="logo-indh"
+                     onmouseout="this.style.transform='scale(1)'" onload="console.log('Logo chargé')">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="initiativeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            L'initiative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="initiativeDropdown">
+                            <li><a class="dropdown-item" href="#">Chantier de Règne</a></li>
+                            <li><a class="dropdown-item" href="#">Discours & Messages Royaux</a></li>
+                            <li><a class="dropdown-item" href="#">Valeurs et principes</a></li>
+                            <li><a class="dropdown-item" href="#">Organisation</a></li>
+                            <li><a class="dropdown-item" href="#">Coopération internationale</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programmes et impact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                            <li><a class="dropdown-item" href="phase1.html">Phase I</a></li>
+                            <li><a class="dropdown-item" href="phase2.html">Phase II</a></li>
+                            <li><a class="dropdown-item" href="phase3.html">Phase III</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="domainesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Domaines d'action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="domainesDropdown">
+                            <li><a class="dropdown-item" href="#">Développement de la Petite Enfance</a></li>
+                            <li><a class="dropdown-item" href="#">Appui à l’éducation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ingenierieDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ingénierie sociale et innovation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ingenierieDropdown">
+                            <li><a class="dropdown-item" href="#">Innovation 1</a></li>
+                            <li><a class="dropdown-item" href="#">Innovation 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ressourcesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ressourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Ressource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ressource 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+
+   /* Custom Main Header Container (Optional, depends on full layout) */
+.custom-main-header {
+    width: 100%;
+    /* You can add a background or other styling here if the header extends beyond the navbar */
+}
+
+/* Logo Styling */
+.logo-indh {
+    max-height: 90px; /* Original size */
+    filter: drop-shadow(0 2px 8px rgba(33,103,51,0.15)); /* Greenish shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.logo-indh:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar General Styling */
+.navbar {
+    padding-top: 0.75rem; /* Adjust padding if py-3 isn't enough */
+    padding-bottom: 0.75rem;
+    /* Ensure the background is white as per your image and shadow-sm is used */
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* More pronounced but soft shadow */
+}
+
+/* Adjusting Bootstrap's default nav-link and applying your custom styles */
+.custom-nav-link {
+    color: #216733; /* Your specified dark green color */
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 8px 18px !important; /* Override Bootstrap's default padding */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; /* Added transform */
+    letter-spacing: 0.5px;
+    margin: 0 2px; /* Small margin between links */
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Green gradient on hover */
+    color: #fff !important; /* White text on hover */
+    box-shadow: 0 4px 15px rgba(40,167,69,0.25); /* Stronger shadow on hover */
+    text-decoration: none;
+    outline: none; /* Remove outline on focus */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly scale on hover */
+}
+
+/* Active link style */
+.custom-nav-link.active {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Active link uses the gradient */
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(40,167,69,0.15);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* More prominent shadow for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 5px; /* Space from the parent link */
+    padding: 5px 0;
+    background-color: #fff; /* Ensure white background */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px; /* More generous padding */
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.95rem; /* Slightly smaller font size for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #e6f5ea; /* Light green hover for dropdown items */
+    color: #1e7e34; /* Darker green text on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Desktop & Larger (>= 992px, based on navbar-expand-lg) */
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem; /* Give some space between logo and menu */
+    }
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the content area to grow */
+        justify-content: center; /* Centers the ul.navbar-nav */
+    }
+    /* Ensure dropdowns appear correctly on hover on desktop */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        vertical-align: middle; /* Align dropdown arrow */
+    }
+}
+
+/* Mobile & Tablet (<= 991.98px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin-right: auto; /* Push logo to left, toggler to right */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center text in collapsed menu */
+        background-color: #fff; /* Ensure white background for collapsed menu */
+        border-top: 1px solid #eee; /* Subtle separator */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute; /* Take it out of normal flow to stack below toggler */
+        width: 100%;
+        left: 0;
+        top: 100%; /* Position right below the navbar */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for the opened mobile menu */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Make nav links take full width in mobile */
+    }
+
+    .nav-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .custom-nav-link {
+        padding: 12px 15px !important; /* More comfortable padding for mobile links */
+        border-radius: 0 !important; /* Remove rounded corners for full-width links */
+        border-bottom: 1px solid #f8f8f8; /* Subtle separator for mobile links */
+        display: block; /* Make links block-level for full clickable area */
+    }
+
+    .nav-item:last-child .custom-nav-link {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .dropdown-menu {
+        position: static; /* Make dropdown menus flow naturally within the collapsed menu */
+        width: 100%;
+        box-shadow: none; /* No shadow for nested mobile dropdowns */
+        border: none; /* No border for nested mobile dropdowns */
+        background-color: #fcfdfd; /* Slightly different background for nested dropdowns */
+        padding-left: 20px; /* Indent dropdown items on mobile */
+        border-top: 1px solid #f5f5f5; /* Separator for dropdown menu in mobile */
+        border-bottom: 1px solid #f5f5f5;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        text-align: center; /* Center dropdown items in mobile menu */
+        padding: 10px 15px; /* Adjust padding for mobile dropdown items */
+    }
+}
+
+/* Small screen adjustments for logo */
+@media (max-width: 575.98px) {
+    .logo-indh {
+        max-height: 70px; /* Smaller logo on very small screens */
+    }
+}
+</style>
+<main>
+    <section class="phase-section py-5">
+  <div class="container">
+    <h1 class="main-phase-title text-center mb-5">Phase III <span class="text-muted">(2019 – 2023)</span></h1>
+
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <h3 class="sub-title text-center mb-4" style="color: #d3c38e;">Une phase centrée sur le capital humain</h3>
+        <p class="lead text-center text-muted phase-intro-text">
+          La troisième phase marque un tournant majeur pour l’INDH, en recentrant l’action sur le développement du capital humain et les déterminants immatériels du progrès social. Dotée d’un budget de 18 milliards de dirhams, elle se décline en quatre programmes : les programmes 1 et 2 prolongent les interventions engagées depuis 2005 en matière d’accès aux services de base et de prise en charge de la précarité, tandis que les programmes 3 et 4 introduisent une nouvelle dynamique axée sur la jeunesse, la petite enfance et l’inclusion économique.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title mb-4"><i class="bi bi-caret-right-fill text-warning me-2"></i> Programmes mis en œuvre</h2>
+
+    <div class="text-center mb-5">
+      <img src="https://www.indh.ma/assets/img/phase3/rectangle%2062.png" class="img-fluid rounded-3 shadow" alt="Route vers l'avenir INDH">
+    </div>
+    
+    <!-- Ici tu peux ajouter une grille comme pour Phase I et II pour présenter les 4 programmes -->
+  </div>
+</section>
+<style>
+    .phase-section {
+  background-color: #f8fcf9;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main-phase-title {
+  color: #216733;
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.main-phase-title .text-muted {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.sub-title {
+  color: #216733;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.phase-intro-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+}
+
+.section-title {
+  color: #216733;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.img-fluid.rounded-3.shadow {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+</style>
+
+
+<!-- Section Programme 1 -->
+<section class="py-5" style="background-color: #fdfdf9;">
+  <div class="container">
+    <!-- Titre -->
+    <div class="text-center mb-5">
+      <h3 class="fw-bold" style="color: #216733">PROGRAMME 2:</h3>
+      <h2 class="fw-bold" style="color: #d3c38e;">Accompagnement des personnes en situation de précarité</h2>
+      <p class="text-secondary mt-3">
+        Ce programme vise à améliorer les conditions de prise en charge des personnes vulnérables à travers un appui structuré aux centres spécialisés. Il cible <strong>11 catégories prioritaires</strong> définies par l’INDH, pour renforcer la dignité et l’insertion socio-économique des personnes en situation de précarité.
+      </p>
+    </div>
+
+    <!-- Catégories -->
+    <div class="row text-center g-4">
+      <!-- 01 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid green;">
+          <span class="badge bg-success mb-2">01</span>
+          <p class="mb-0">Handicap sans ressources</p>
+        </div>
+      </div>
+      <!-- 02 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid green;">
+          <span class="badge bg-success mb-2">02</span>
+          <p class="mb-0">Aliénés sans abris</p>
+        </div>
+      </div>
+      <!-- 03 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid green;">
+          <span class="badge bg-success mb-2">03</span>
+          <p class="mb-0">Hémodialysés sans ressources</p>
+        </div>
+      </div>
+      <!-- 04 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid green;">
+          <span class="badge bg-success mb-2">04</span>
+          <p class="mb-0">Personnes âgées démunies</p>
+        </div>
+      </div>
+      <!-- 05 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid green;">
+          <span class="badge bg-success mb-2">05</span>
+          <p class="mb-0">Personnes atteintes du SIDA</p>
+        </div>
+      </div>
+      <!-- 06 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #d4af37;">
+          <span class="badge bg-warning text-dark mb-2">06</span>
+          <p class="mb-0">Femmes en grande précarité</p>
+        </div>
+      </div>
+      <!-- 07 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #d4af37;">
+          <span class="badge bg-warning text-dark mb-2">07</span>
+          <p class="mb-0">Ex-détenus sans ressources</p>
+        </div>
+      </div>
+      <!-- 08 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #d4af37;">
+          <span class="badge bg-warning text-dark mb-2">08</span>
+          <p class="mb-0">Mendiants et vagabonds</p>
+        </div>
+      </div>
+      <!-- 09 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #d4af37;">
+          <span class="badge bg-warning text-dark mb-2">09</span>
+          <p class="mb-0">Toxicomanes sans ressources</p>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="col-6 col-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #198754;">
+          <span class="badge bg-success mb-2">10</span>
+          <p class="mb-0">Enfants abandonnés</p>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="col-6 col-md-3 offset-md-3">
+        <div class="p-3 border rounded-3 shadow-sm h-100" style="border-left: 5px solid #198754;">
+          <span class="badge bg-success mb-2">11</span>
+          <p class="mb-0">Enfants des rues / Jeunes sans abri</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+            <h2 class="section-title">Réalisations clés</h2>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-building icon"></i> <p><strong>2 022 centres sociaux soutenus</strong></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-people icon"></i> <p>L'amélioration des services et des capacités des centres d'accueil</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-journal-check icon"></i> <p><strong>6 292 projets et actions</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="budget-info-card">
+                        <p>
+                            61% du budget bénéficie aux personnes souffrant de handicap sans ressources, aux malades hémodialysés sans ressources, et aux femmes en situation de grande précarité
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="full-width-image-card">
+                        <img src="images/programme1.PNG" alt="Description de l'image">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+         <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdfdf9;;
+        }
+        .key-achievements-section {
+            padding: 4rem 0;
+        }
+        .section-title {
+          
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #28a745; /* Green dot */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .achievement-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 150px; /* Ensure consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .achievement-card .icon {
+            font-size: 3rem;
+            color: #216733; /* Bootstrap primary blue */
+            margin-bottom: 1rem;
+        }
+        .achievement-card h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .achievement-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+        .budget-info-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 150px; /* Ensure consistent height */
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        .budget-info-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+        .full-width-image-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden; /* Ensures image fits within rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-top: 2rem;
+        }
+        .full-width-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover; /* Ensures image covers the area nicely */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767.98px) {
+            .achievement-card,
+            .budget-info-card {
+                min-height: auto; /* Allow height to adjust on smaller screens */
+            }
+        }
+    </style>
+</section>
+<br>
+<!-- Section Programme 2 -->
+  <section class="programme-section" style="background-color: #fdfdf9;">
+        <div class="container">
+            <h1 class="programme-title" style="text-align: center; color: #216733; ">PROGRAMME 3:</h1>
+            <h2 class="programme-subtitle" style="text-align: center; color: #d3c38e;">Amélioration du revenu et inclusion économique des jeunes</h2>
+
+            <p class="programme-description">
+                Ce programme répond à la nécessité de renforcer l’autonomie économique des jeunes en soutenant l’entrepreneuriat, l’employabilité et les dynamiques de
+                création de valeur à l’échelle locale. Il articule des dispositifs d’accompagnement adaptés, de financement et d’orientation, en étroite coordination avec les
+                partenaires publics, privés et associatifs. <br>
+                Le Programme 3 repose sur 4 axes complémentaires:
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#d3c38e" viewBox="0 0 16 16">
+                            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <h5>Plateformes des jeunes</h5>
+                        <p>
+                            espaces d’accueil, d’écoute, d’orientation et d’accompagnement technique en
+                            entrepreneuriat et employabilité, implantée au niveau des préfectures et provinces.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#d3c38e" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M9.5 8s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zM7 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"/>
+                        </svg>
+                        <h5>Aide à l'employabilité</h5>
+                        <p>
+                            développement des compétences transversales et mise en relation avec les
+                            acteurs de l’intermédiation et du marché de l’emploi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#d3c38e" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path d="M4.5 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-3 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6m9 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path d="M6.5 12.5A.5.5 0 0 1 7 12h2a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5"/>
+                            <path d="M12.5 12.5A.5.5 0 0 1 13 12h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M.5 12.5A.5.5 0 0 1 1 12h2a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/>
+                            <path d="M5.5 1.5A.5.5 0 0 1 6 1h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                            <path d="M1.5 5.5A.5.5 0 0 1 2 5h2a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M11.5 5.5A.5.5 0 0 1 12 5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h2a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M11.5 1.5A.5.5 0 0 1 12 1h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <h5>Appui à l'entrepreneuriat</h5>
+                        <p>
+                            soutien à la création de projets à travers un accompagnement pré- et post-création et
+                            un appui financier.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#d3c38e" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m-2 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                        <h5>Amélioration du revenu</h5>
+                        <p>
+                            accompagnement de coopératives, TPME et GIE dans le développement de chaînes
+                            de valeur locales, avec un soutien financier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="key-achievements-title">Réalisations clés</h3>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-block double-height" id="ecoute-orientation">
+                        <h6>Écoute et Orientation des jeunes</h6>
+                        <div class="d-flex w-100 justify-content-around align-items-center flex-wrap">
+                            <div class="stats-item text-start">
+                                <h3>130</h3>
+                                <p>Plateformes de jeunes <br>(+3 plateformes mobiles)</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>340 000</h3>
+                                <p>Personnes <br>(25% femmes)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-block">
+                        <h6>Soutien à l'Entrepreneuriat</h6>
+                        <div class="d-flex w-100 justify-content-around align-items-center flex-wrap">
+                            <div class="stats-item">
+                                <h3>11 100</h3>
+                                <p>Projets financés</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>37 400</h3>
+                                <p>Jeunes accompagnés pré-création</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>10 600</h3>
+                                <p>Jeunes accompagnés post création</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-block">
+                        <h6>Aide à l'Employabilité</h6>
+                        <div class="d-flex w-100 justify-content-around align-items-center flex-wrap">
+                            <div class="stats-item">
+                                <h3>200</h3>
+                                <p>Actions au niveau de S/P P/P</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>23 200</h3>
+                                <p>Jeunes formés</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>9 100</h3>
+                                <p>Jeunes insérés en emploi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="stats-block">
+                        <h6>Amélioration du Revenu</h6>
+                        <div class="d-flex w-100 justify-content-around align-items-center flex-wrap">
+                            <div class="stats-item">
+                                <h3>5 100</h3>
+                                <p>Projets financés</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>88</h3>
+                                <p>Études de chaîne de valeur réalisée</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>3 350</h3>
+                                <p>Coopératives et GIEs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .programme-section {
+            padding: 4rem 0;
+        }
+        .programme-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .programme-subtitle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .programme-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .pillar-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 200px; /* Ensure consistent height for cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+        }
+        .pillar-card .card-icon {
+            font-size: 3rem;
+            color:  #d2bb71;   /* Example icon color, adjust as needed */
+            margin-bottom: 1rem;
+        }
+        .pillar-card h5 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.75rem; 
+        }
+        .pillar-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
+        /* Realisations Cles Section */
+        .key-achievements-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .key-achievements-title::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #28a745; /* Green dot */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .stats-block {
+            background-color: #005D0F; /* Darker blue/grey background like the image */
+            color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+            justify-content: space-around; /* Distributes items evenly */
+            align-items: center;
+            min-height: 120px; /* Ensure consistent height for stat blocks */
+        }
+        .stats-block.double-height {
+            min-height: 180px; /* Adjust for larger content like "Ecoute et Orientation" */
+        }
+        .stats-block h6 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+            width: 100%; /* Title takes full width */
+        }
+        .stats-item {
+            flex: 1; /* Each item takes equal space */
+            min-width: 120px; /* Minimum width for each stat item to prevent squishing */
+            padding: 0.5rem;
+        }
+        .stats-item h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #b79834; /* Green for numbers */
+            margin-bottom: 0.2rem;
+        }
+        .stats-item p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 0;
+        }
+        .stats-item:not(:last-child) {
+            border-right: 1px solid rgba(255, 255, 255, 0.2); /* Separator */
+            margin-right: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .stats-item:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        /* Adjustments for specific stat blocks */
+        #ecoute-orientation .stats-item:not(:last-child) {
+            border-right: none; /* No separator for the first part of this block */
+        }
+        #ecoute-orientation .stats-item:first-child {
+            text-align: left; /* Align text for the first item in "Ecoute" */
+        }
+        #ecoute-orientation .stats-item:not(:first-child) {
+            border-left: 1px solid rgba(255, 255, 255, 0.2); /* Separator before the second and third items */
+            padding-left: 0.5rem;
+        }
+        #ecoute-orientation .stats-item p {
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767.98px) {
+            .programme-title {
+                font-size: 1.75rem;
+            }
+            .programme-subtitle {
+                font-size: 1.25rem;
+            }
+            .pillar-card {
+                min-height: auto; /* Allow height to adjust on smaller screens */
+            }
+            .stats-block {
+                flex-direction: column; /* Stack items vertically on small screens */
+                min-height: auto;
+            }
+            .stats-block.double-height {
+                min-height: auto;
+            }
+            .stats-item {
+                border-right: none !important; /* Remove vertical separators on small screens */
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add horizontal separator */
+                margin-right: 0 !important;
+                padding-right: 0 !important;
+                margin-bottom: 1rem;
+                width: 100%; /* Full width for each item */
+            }
+            .stats-item:last-child {
+                border-bottom: none; /* No separator for the last item */
+                margin-bottom: 0;
+            }
+            #ecoute-orientation .stats-item:not(:first-child) {
+                border-left: none !important;
+            }
+        }
+    </style>
+    </section>
+    <br>
+<!-- Section Programme 3 -->
+ <section class="programme-section" style="background-color: #fdfdf9;">
+        <div class="container">
+            <h1 class="programme-title" style="text-align: center; color: #216733; ">PROGRAMME 4:</h1>
+            <h2 class="programme-subtitle" style="text-align: center; color: #d3c38e;">Impulsion du capital humain des générations montantes</h2>
+
+            <p class="programme-description">
+                Ce programme vise à garantir à chaque enfant les conditions d'un bon départ dans la vie, en aplissant dès les premières années sur les déterminants immédiats du développement humain. Il s'adresse en priorité aux enfants et aux jeunes issus des milieux les plus vulnérables. <br>
+                Le programme s'articule autour de trois axes d'intervention:
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <h5>Santé et nutrition maternelles et infantiles</h5>
+                        <p>
+                            déploiement d'un dispositif de santé communautaire en partenariat avec le Ministère de la Santé et les Centres de Santé, intégrant des Dar Al Oumouma, un accompagnement et une prise en charge médicale en milieu rural.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <h5>Généralisation d'un préscolaire de qualité en milieu rural</h5>
+                        <p>
+                            création d'un cadre pédagogique et de normes normalisées, professionnalisation des éducateurs, formation des mères, approche multi-acteurs avec des partenariats privés, notamment le Ministère de l'Éducation Nationale, du Préscolaire et des Sports.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="pillar-card">
+                        <h5>Appui à la scolarité et à l'épanouissement des enfants</h5>
+                        <p>
+                            à travers la mise en place de structures d'hébergement, à la santé scolaire, à l'accès au transport scolaire, et à l'innovation scolaire, avec des approches innovantes telle que la Promotion de la lecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title-dot">Réalisations clés</h3>
+
+            <h4 class="axe-subtitle">Axe 1: Santé et nutrition maternelles et infantiles</h4>
+            <ul class="styled-list">
+                <li>Renforcement des Dar Al Oumouma avec une nouvelle génération de structures élargies et mieux équipées.</li>
+                <li>Déploiement progressif du dispositif de santé communautaire dans les territoires ciblés.</li>
+                <li>Mise en œuvre de campagnes de sensibilisation intégrées le dépistage précoce des déficiences, la promotion de la santé infantile et maternelle, et la distribution de compléments nutritionnels.</li>
+                <li>Acquisition d'équipements médicaux et déploiement d'ambulances et d'unités médicales mobiles pour renforcer l'accessibilité des soins, notamment dans les zones enclavées.</li>
+            </ul>
+
+            <div class="row stats-row-first">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-hospital icon"></i>
+                        <h3>94</h3>
+                        <p>Structures de santé aménagées</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-tools icon"></i>
+                        <h3>401</h3>
+                        <p>Équipements médicaux projets d'acquisition</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-truck-flatbed icon"></i>
+                        <h3>286</h3>
+                        <p>Ambulances et unités mobiles acquises</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-box icon"></i>
+                        <h3>123</h3>
+                        <p>Kits de nutrition distribués</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-megaphone-fill icon"></i>
+                        <h3>219</h3>
+                        <p>actions de sensibilisation</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-house-door-fill icon"></i>
+                        <h3>441</h3>
+                        <p>Dar Al Oumouma opérations d'aménagement ou de construction</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="axe-subtitle">Axe 2: Généralisation du préscolaire en milieu rural</h4>
+            <ul class="styled-list">
+                <li>Élargissement de l'offre préscolaire public par la création de plus de 10 000 unités préscolaires dans les zones rurales.</li>
+                <li>Émergence d'une forte demande de préscolarisation témoignant de la prise de conscience accrue par les ménages en milieu rural de l'importance de l'éducation préscolaire de leurs enfants.</li>
+                <li>Élaboration d'un modèle d'auto-évaluation de préscolaire de qualité, reconnu comme référence à l'échelle nationale et internationale (Banque Mondiale, UNICEF,...).</li>
+                <li>Une approche de faire-faire à travers deux fondations pionnières dans le domaine du préscolaire (FMPS, Fondation Zakoura).</li>
+                <li>Promotion de l'accès total permettant à plus de 2,8M jeunes d'accéder au préscolaire.</li>
+                <li>Accompagnement de la montée en puissance des fondations partenaires, démontrant la capacité de l'INDH à faire émerger un tiers-secteur à même d'assurer le déploiement de programmes sociaux d'envergure.</li>
+            </ul>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-grid-fill icon"></i>
+                        <h3>10 120</h3>
+                        <p>unités préscolaires (1 180 salles de classe)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-percent icon"></i>
+                        <h3>91,4%</h3>
+                        <p>Taux de préscolarisation en milieu rural (MENPS, 2023/2024)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-people-fill icon"></i>
+                        <h3>301 000</h3>
+                        <p>enfants bénéficiaires (dans 12 000 Douars)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="axe-subtitle">Appui à l'éducation</h4>
+            <ul class="styled-list">
+                <li>Déploiement de programmes de soutien scolaire et de remédiation, notamment à travers la méthode TaRL.</li>
+                <li>Appui au Transport scolaire et à l'hébergement scolaire (Dar Talib(a)) dans les zones enclavées.</li>
+                <li>Réalisation de projets d'épanouissement à caractère socioéducatif, culturel ou sportif.</li>
+                <li>Promotion de la santé scolaire par des actions de prévention et de dépistage en milieu éducatif.</li>
+            </ul>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-building icon"></i>
+                        <h3>60</h3>
+                        <p>Dar Talib(a) construites</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-bus-front-fill icon"></i>
+                        <h3>1 762</h3>
+                        <p>moyens de transport scolaire acquis</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="stats-block-white">
+                        <i class="bi bi-mortarboard-fill icon"></i>
+                        <h3>430 000</h3>
+                        <p>élèves bénéficiaires de soutien scolaire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+           body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .programme-section {
+            padding: 4rem 0;
+        }
+        .programme-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .programme-subtitle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .programme-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 3rem;
+        }
+
+        /* Top Pillar Cards */
+        .pillar-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 200px; /* Consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+        }
+        .pillar-card h5 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+        .pillar-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
+        /* Réalisations Clés / Axe Titles */
+        .section-title-dot {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title-dot::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #28a745; /* Green dot */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .axe-subtitle {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Bullet Points List */
+        .styled-list {
+            list-style: none; /* Remove default bullet */
+            padding-left: 0;
+            margin-bottom: 2.5rem;
+        }
+        .styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        .styled-list li::before {
+            content: '•'; /* Custom bullet point */
+            color: #28a745; /* Green bullet */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Statistics Blocks (for Axes) */
+        .stats-block-white {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            min-height: 120px; /* Consistent height for these small blocks */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .stats-block-white .icon {
+            font-size: 2.5rem;
+            color: #d3c38e;; /* Bootstrap primary blue */
+            margin-bottom: 0.5rem;
+        }
+        .stats-block-white h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745; /* Green for numbers */
+            margin-bottom: 0.2rem;
+        }
+        .stats-block-white p {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        /* Special alignment for the 1st row of stats blocks */
+        @media (min-width: 992px) {
+            .stats-row-first .col-lg-3 {
+                display: flex;
+            }
+            .stats-row-first .stats-block-white {
+                flex-grow: 1; /* Allow cards to fill space */
+            }
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 767.98px) {
+            .programme-title {
+                font-size: 1.75rem;
+            }
+            .programme-subtitle {
+                font-size: 1.25rem;
+            }
+            .pillar-card, .stats-block-white {
+                min-height: auto; /* Allow height to adjust on smaller screens */
+            }
+            .stats-block-white {
+                padding: 1.25rem;
+            }
+        }
+        </style>
+    </section>
+
+  
+</main>
+
+<br> 
+<!-- FOOTER -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Logo ou Titre -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase">MonEntreprise</h5>
+        <p>
+          Votre partenaire de confiance pour des solutions sur mesure et professionnelles
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Liens</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#realisations" class="text-white text-decoration-none">Réalisations</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Rabat, Maroc</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contact@monentreprise.ma</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +212 6 12 34 56 78</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center text-md-start">
+        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mt-4 border-top border-light pt-3">
+    &copy; 2025 MonEntreprise. Tous droits réservés
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

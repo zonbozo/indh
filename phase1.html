@@ -1,0 +1,787 @@
+<head>
+  <meta charset="UTF-8">
+  <title>INDH - Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    console.log("Chargement de la page INDH...");
+  </script>
+</head>
+
+
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-2">Suivez nous sur :</span>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Facebook" onclick="console.log('Icône Facebook cliquée')">
+      <i class="bi bi-facebook" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white me-2 social-icon" aria-label="Instagram" onclick="console.log('Icône Instagram cliquée')">
+      <i class="bi bi-instagram" style="font-size: 22px;"></i>
+    </a>
+    <a href="#" class="text-white social-icon" aria-label="YouTube" onclick="console.log('Icône YouTube cliquée')">
+      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+<header class="custom-main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/New-Logo-INDH---Al-Fida[1].png" alt="Logo INDH" class="logo-indh"
+                     onmouseout="this.style.transform='scale(1)'" onload="console.log('Logo chargé')">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link custom-nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="initiativeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            L'initiative
+                        </a>
+                          <ul class="dropdown-menu" aria-labelledby="initiativeDropdown">
+                            <li><a class="dropdown-item" href="#">Chantier de Règne</a></li>
+                            <li><a class="dropdown-item" href="#">Discours & Messages Royaux</a></li>
+                            <li><a class="dropdown-item" href="#">Valeurs et principes</a></li>
+                            <li><a class="dropdown-item" href="#">Organisation</a></li>
+                            <li><a class="dropdown-item" href="#">Coopération internationale</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programmes et impact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                            <li><a class="dropdown-item" href="">Phase I</a></li>
+                            <li><a class="dropdown-item" href="">Phase II</a></li>
+                            <li><a class="dropdown-item" href="#">Phase III</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="domainesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Domaines d'action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="domainesDropdown">
+                            <li><a class="dropdown-item" href="#">Développement de la Petite Enfance</a></li>
+                            <li><a class="dropdown-item" href="#">Appui à l’éducation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ingenierieDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ingénierie sociale et innovation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ingenierieDropdown">
+                            <li><a class="dropdown-item" href="#">Innovation 1</a></li>
+                            <li><a class="dropdown-item" href="#">Innovation 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-nav-link dropdown-toggle" href="#" id="ressourcesDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ressourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Ressource 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ressource 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+
+   /* Custom Main Header Container (Optional, depends on full layout) */
+.custom-main-header {
+    width: 100%;
+    /* You can add a background or other styling here if the header extends beyond the navbar */
+}
+
+/* Logo Styling */
+.logo-indh {
+    max-height: 90px; /* Original size */
+    filter: drop-shadow(0 2px 8px rgba(33,103,51,0.15)); /* Greenish shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.logo-indh:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar General Styling */
+.navbar {
+    padding-top: 0.75rem; /* Adjust padding if py-3 isn't enough */
+    padding-bottom: 0.75rem;
+    /* Ensure the background is white as per your image and shadow-sm is used */
+    background-color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* More pronounced but soft shadow */
+}
+
+/* Adjusting Bootstrap's default nav-link and applying your custom styles */
+.custom-nav-link {
+    color: #216733; /* Your specified dark green color */
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 8px 18px !important; /* Override Bootstrap's default padding */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; /* Added transform */
+    letter-spacing: 0.5px;
+    margin: 0 2px; /* Small margin between links */
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Green gradient on hover */
+    color: #fff !important; /* White text on hover */
+    box-shadow: 0 4px 15px rgba(40,167,69,0.25); /* Stronger shadow on hover */
+    text-decoration: none;
+    outline: none; /* Remove outline on focus */
+    transform: translateY(-2px) scale(1.02); /* Lift and slightly scale on hover */
+}
+
+/* Active link style */
+.custom-nav-link.active {
+    background: linear-gradient(90deg, #1e7e34 0%, #28a745 100%); /* Active link uses the gradient */
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(40,167,69,0.15);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* More prominent shadow for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 5px; /* Space from the parent link */
+    padding: 5px 0;
+    background-color: #fff; /* Ensure white background */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px; /* More generous padding */
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.95rem; /* Slightly smaller font size for dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #e6f5ea; /* Light green hover for dropdown items */
+    color: #1e7e34; /* Darker green text on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Desktop & Larger (>= 992px, based on navbar-expand-lg) */
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem; /* Give some space between logo and menu */
+    }
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the content area to grow */
+        justify-content: center; /* Centers the ul.navbar-nav */
+    }
+    /* Ensure dropdowns appear correctly on hover on desktop */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        vertical-align: middle; /* Align dropdown arrow */
+    }
+}
+
+/* Mobile & Tablet (<= 991.98px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin-right: auto; /* Push logo to left, toggler to right */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center text in collapsed menu */
+        background-color: #fff; /* Ensure white background for collapsed menu */
+        border-top: 1px solid #eee; /* Subtle separator */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute; /* Take it out of normal flow to stack below toggler */
+        width: 100%;
+        left: 0;
+        top: 100%; /* Position right below the navbar */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for the opened mobile menu */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Make nav links take full width in mobile */
+    }
+
+    .nav-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .custom-nav-link {
+        padding: 12px 15px !important; /* More comfortable padding for mobile links */
+        border-radius: 0 !important; /* Remove rounded corners for full-width links */
+        border-bottom: 1px solid #f8f8f8; /* Subtle separator for mobile links */
+        display: block; /* Make links block-level for full clickable area */
+    }
+
+    .nav-item:last-child .custom-nav-link {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .dropdown-menu {
+        position: static; /* Make dropdown menus flow naturally within the collapsed menu */
+        width: 100%;
+        box-shadow: none; /* No shadow for nested mobile dropdowns */
+        border: none; /* No border for nested mobile dropdowns */
+        background-color: #fcfdfd; /* Slightly different background for nested dropdowns */
+        padding-left: 20px; /* Indent dropdown items on mobile */
+        border-top: 1px solid #f5f5f5; /* Separator for dropdown menu in mobile */
+        border-bottom: 1px solid #f5f5f5;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        text-align: center; /* Center dropdown items in mobile menu */
+        padding: 10px 15px; /* Adjust padding for mobile dropdown items */
+    }
+}
+
+/* Small screen adjustments for logo */
+@media (max-width: 575.98px) {
+    .logo-indh {
+        max-height: 70px; /* Smaller logo on very small screens */
+    }
+}
+</style>
+<body>
+   
+
+<main>
+
+ <section class="phase-section py-5">
+    <div class="container">
+        <h1 class="main-phase-title text-center mb-5">Phase I <span class="text-muted">(2005 – 2010)</span></h1>
+
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10">
+                <h3 class="sub-title text-center mb-4">UNE PHASE FONDATRICE ET D'ANCRAGE TERRITORIAL</h3>
+                <p style="text-align: justify;" class="lead text-center text-muted phase-intro-text">
+                    Sous la Vision éclairée de Sa Majesté le Roi Mohammed VI, Que Dieu L’Assiste, cette première phase a posé les bases d’un nouveau mode d’intervention en matière de développement humain. Elle a introduit une gouvernance participative, contribué à l'inclusion des catégories précaires, renforcé l’accès à l'infrastructure et aux services sociaux de base et lancé les premières activités génératrices de revenu, en ciblant prioritairement les zones rurales défavorisées et les quartiers urbains sous-équipées.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center mb-5 mt-4">PROGRAMMES MIS EN ŒUVRE</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center mb-5">
+            <div class="col">
+                <div class="card programme-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-house-door programme-icon"></i>
+                        </div>
+                        <h5 class="card-title programme-title">Lutte contre la pauvreté en milieu rural</h5>
+                        <p class="card-text programme-description">
+                            ciblant 403 communes rurales à forte vulnérabilité, dont le taux de pauvreté est supérieur ou égal à 30 %.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card programme-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-building programme-icon"></i>
+                        </div>
+                        <h5 class="card-title programme-title">Lutte contre l’exclusion sociale en milieu urbain</h5>
+                        <p class="card-text programme-description">
+                            couvrant 264 quartiers défavorisés en milieu urbain, comptant 100 000 habitants ou plus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card programme-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-heart-fill programme-icon"></i>
+                        </div>
+                        <h5 class="card-title programme-title">Lutte contre la précarité</h5>
+                        <p class="card-text programme-description">
+                            prenant en charge 8 catégories sociales vulnérables, notamment les personnes âgées, les personnes en situation de handicap, les enfants abandonnés et les femmes en situation difficile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card programme-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-globe programme-icon"></i>
+                        </div>
+                        <h5 class="card-title programme-title">Programme transversal</h5>
+                        <p class="card-text programme-description">
+                            destiné aux communes non éligibles aux autres programmes, pour réaliser des projets répondant à des besoins spécifiques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center mb-5 mt-4">PREMIERS FONDEMENTS MÉTHODOLOGIQUES</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
+            <div class="col">
+                <div class="info-block h-100 p-4 shadow-sm rounded-3">
+                    <div class="info-icon-circle mb-3">
+                        <i class="bi bi-lightbulb info-icon"></i>
+                    </div>
+                    <h4 class="info-title">Diagnostics participatifs</h4>
+                    <p class="info-description">
+                        Dans 403 communes et élaboration de 403 ILDH (Initiative locale de développement humain) y afférent.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info-block h-100 p-4 shadow-sm rounded-3">
+                    <div class="info-icon-circle mb-3">
+                        <i class="bi bi-building-check info-icon"></i>
+                    </div>
+                    <h4 class="info-title">Création des DAS</h4>
+                    <p class="info-description">
+                        Divisions de l’Action Sociale (DAS) en tant que relais techniques au niveau provincial.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info-block h-100 p-4 shadow-sm rounded-3">
+                    <div class="info-icon-circle mb-3">
+                        <i class="bi bi-people info-icon"></i>
+                    </div>
+                    <h4 class="info-title">Mise en place des EAC/EAQ</h4>
+                    <p class="info-description">
+                        Équipes d'animation de communes et de quartiers/EAC/EAQ.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info-block h-100 p-4 shadow-sm rounded-3">
+                    <div class="info-icon-circle mb-3">
+                        <i class="bi bi-geo-alt info-icon"></i>
+                    </div>
+                    <h4 class="info-title">Ciblage rigoureux</h4>
+                    <p class="info-description">
+                        Fondé sur des indicateurs objectifs de pauvreté.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center mb-5 mt-4">CHIFFRES CLÉS <span class="text-muted">(2005–2010)</span></h2>
+        <div class="row row-cols-1 g-4 justify-content-center mb-5">
+            <div class="col-lg-8">
+                <div class="stat-card p-4 rounded-3 shadow-sm d-flex align-items-center mb-4">
+                    <div class="stat-icon-wrapper me-4">
+                        <i class="bi bi-bar-chart-line-fill stat-icon"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 class="stat-value">Près de 23 000 projets</h4>
+                        <p class="stat-description mb-0">initiés</p>
+                    </div>
+                </div>
+                <div class="stat-card p-4 rounded-3 shadow-sm d-flex align-items-center mb-4">
+                    <div class="stat-icon-wrapper me-4">
+                        <i class="bi bi-arrow-up-circle-fill stat-icon"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 class="stat-value">Rôle renforcé</h4>
+                        <p class="stat-description mb-0">des DAS</p>
+                    </div>
+                </div>
+                <div class="stat-card p-4 rounded-3 shadow-sm d-flex align-items-center mb-4">
+                    <div class="stat-icon-wrapper me-4">
+                        <i class="bi bi-hand-thumbs-up-fill stat-icon"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4 class="stat-value">Renforcement du tissu associatif</h4>
+                        <p class="stat-description mb-0">émergence de nouvelles élites locales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center mb-5 mt-4">IMPACTS POSITIFS CONFIRMÉS EN MILIEU RURAL</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
+            <div class="col">
+                <div class="impact-block p-4 rounded-3 shadow-sm text-center h-100">
+                    <i class="bi bi-graph-up-arrow impact-icon-large mb-3"></i>
+                    <p class="impact-text"><span class="impact-highlight">+20,3 %</span> de revenu moyen des ménages</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="impact-block p-4 rounded-3 shadow-sm text-center h-100">
+                    <i class="bi bi-graph-down-arrow impact-icon-large mb-3"></i>
+                    <p class="impact-text"><span class="impact-highlight">Réduction</span> de la pauvreté multidimensionnelle</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* Styles Généraux de la Section (à conserver) */
+.phase-section {
+    background-color: #f8fcf9; /* Arrière-plan très léger vert/blanc cassé pour la section */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Titres Principaux (à conserver) */
+.main-phase-title {
+    color: #216733; /* Vert foncé */
+    font-weight: 800; /* Extra gras */
+    font-size: 3.5rem; /* Grande taille */
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.main-phase-title .text-muted {
+    font-size: 0.7em; /* Rendre l'année plus petite */
+    font-weight: 600;
+}
+
+.sub-title {
+    color: #216733; /* Vert foncé */
+    font-weight: 700;
+    font-size: 1.8rem; /* Taille moyenne pour les sous-titres */
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.phase-intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a4a4a; /* Texte légèrement plus foncé pour la lisibilité */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Titre de Section (à conserver) */
+.section-title {
+    color: #216733; /* Vert foncé de votre logo */
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Cartes de Programmes (à conserver) */
+.programme-card {
+    border: none;
+    border-radius: 15px;
+    background-color: #fcfdfd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+}
+
+.programme-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.programme-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: #f7f0e6; /* Arrière-plan clair, légèrement doré */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.programme-card .programme-icon {
+    font-size: 2.5rem;
+    color: #d4af37; /* Couleur dorée pour les icônes */
+}
+
+.programme-card .programme-title {
+    color: #216733;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.programme-card .programme-description {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* NOUVEAU : Blocs d'information (pour "Premiers fondements méthodologiques") */
+.info-block {
+    background-color: #fcfdfd; /* Arrière-plan clair */
+    border: 1px solid #e0e0e0; /* Bordure subtile */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.info-icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #e6f7e8; /* Vert clair pour le cercle d'icône */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    color: #216733; /* Icône en vert foncé */
+}
+
+.info-title {
+    color: #216733;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.info-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* NOUVEAU : Cartes de statistiques horizontales (pour "Chiffres clés") */
+.stat-card {
+    background-color: #fcfdfd;
+    border: 1px solid #e0e0e0;
+    border-left: 8px solid #d4af37; /* Bordure gauche dorée pour l'accent */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    padding: 20px; /* Ajout de padding ici */
+}
+
+.stat-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.stat-icon-wrapper {
+    background-color: #f7f0e6; /* Arrière-plan doré clair pour l'icône */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: #d4af37; /* Icône dorée */
+}
+
+.stat-value {
+    color: #216733;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.stat-description {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* NOUVEAU : Blocs d'impacts (pour "Impacts positifs") */
+.impact-block {
+    background-color: #fcfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.impact-icon-large {
+    font-size: 4rem;
+    color: #28a745; /* Vert succès de Bootstrap pour ces icônes */
+}
+
+.impact-text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.impact-text .impact-highlight {
+    font-weight: 800;
+    color: #1e7e34; /* Vert plus foncé pour l'emphase */
+}
+
+/* Ajustements Responsifs (à conserver et adapter si besoin) */
+@media (max-width: 991.98px) {
+    .main-phase-title {
+        font-size: 2.5rem;
+    }
+    .sub-title {
+        font-size: 1.5rem;
+    }
+    .phase-intro-text {
+        font-size: 1rem;
+    }
+    /* Ajustements pour les nouveaux éléments sur tablette/plus petit */
+    .info-icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+    .info-icon {
+        font-size: 2rem;
+    }
+    .info-title {
+        font-size: 1.2rem;
+    }
+    .info-description {
+        font-size: 0.9rem;
+    }
+    .stat-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    .stat-icon {
+        font-size: 2rem;
+    }
+    .stat-value {
+        font-size: 1.3rem;
+    }
+    .stat-description {
+        font-size: 0.85rem;
+    }
+    .impact-icon-large {
+        font-size: 3.5rem;
+    }
+    .impact-text {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-phase-title {
+        font-size: 2rem;
+    }
+    .sub-title {
+        font-size: 1.3rem;
+    }
+    .programme-card .programme-title {
+        font-size: 1.1rem;
+    }
+    .programme-card .programme-description {
+        font-size: 0.85rem;
+    }
+    /* Les cartes de stats horizontales peuvent devenir verticales sur très petits écrans */
+    .stat-card {
+        flex-direction: column; /* Empiler l'icône et le texte */
+        text-align: center;
+        padding: 20px !important;
+    }
+    .stat-icon-wrapper {
+        margin-right: 0 !important;
+        margin-bottom: 15px; /* Espace entre l'icône et le texte */
+    }
+}
+</style>
+</main>
+
+
+
+<br><br>
+<!-- FOOTER -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Logo ou Titre -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase">MonEntreprise</h5>
+        <p>
+          Votre partenaire de confiance pour des solutions sur mesure et professionnelles
+        </p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Liens</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#realisations" class="text-white text-decoration-none">Réalisations</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Rabat, Maroc</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contact@monentreprise.ma</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +212 6 12 34 56 78</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center text-md-start">
+        <h6 class="text-uppercase fw-bold">Suivez-nous</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mt-4 border-top border-light pt-3">
+    &copy; 2025 MonEntreprise. Tous droits réservés
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
